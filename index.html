@@ -14,7 +14,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="font-rubik">
   <header class="flex w-[100%] justify-between p-8">
   <img src="images/logo-bookmark.svg" alt="logo">
 
@@ -49,12 +49,12 @@
   Your bookmarks sync between your devices so you can access them on the go.</p>
   </div>
 
-<div class="grid grid-cols-1 grid-rows-3 border-grey-50 border-t-[1px] m-[2rem]">
-  <div class="text-center p-4 border-b-[1px] border-grey-50">
+<div class="grid grid-cols-1 grid-rows-3 border-t-[1px] border-blue-950/15 m-[2rem]">
+  <div class="text-center p-4 border-b-[1px] border-blue-950/15">
   Simple Bookmarking
-  </div><div class="text-center p-4 border-b-[1px] border-grey-50 text-blue-950">
+  </div><div class="text-center p-4 border-b-[1px] border-blue-950/15 text-blue-950">
   Speedy Searching
-  </div><div class="text-center p-4 border-b-[1px] border-grey-50 text-blue-950">
+  </div><div class="text-center p-4 border-b-[1px] border-blue-950/15 text-blue-950">
   Easy Sharing
   </div>
 </div>
@@ -101,65 +101,79 @@
   Add to Opera
   Minimum version 46
   Add & Install Extension
-
-  <h2 class="text-3xl font-semibold">Frequently Asked Questions</h2>
+<div name="FAQ" ID="FAQ" class="border-[1px] border-black p-8 flex flex-col">
+  <h2 class="text-3xl font-semibold text-center">Frequently Asked Questions</h2>
   
-  <p class="text-grey-600">Here are some of our FAQs. If you have any other questions you’d like 
+  <p class="text-blue-950/50 text-center">Here are some of our FAQs. If you have any other questions you’d like 
   answered please feel free to email us.</p>
 
-
+<div class=" mt-[3.5rem]">
   <!-- Question 1 -->
-  What is Bookmark?
+  <div class="text-[15px] flex justify-between text-blue-950 pt-3 pb-3 border-b-[1px] border-blue-950/15 items-center">
+    What is Bookmark?
+  <img src="images/icon-arrow.svg" alt="arrow" class="h-[100%]"></div>
 
   <!-- Answer 1 -->
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+  <div class="hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
   justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
-
+  </div>
   <!-- Question 2 -->
-  How can I request a new browser?
+  <div class="text-[15px] flex justify-between text-blue-950 pt-3 pb-3 border-b-[1px] border-blue-950/15 items-center">How can I request a new browser?
+    <img src="images/icon-arrow.svg" alt="arrow" class="h-[100%]">
+  </div>
 
   <!-- Answer 2 -->
-  Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+  <div class="hidden">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
   Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
   ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
   Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
-
+  </div>
   <!-- Question 3 -->
+   <div class="text-[15px] flex justify-between text-blue-950 pt-3 pb-3 border-b-[1px] border-blue-950/15 items-center">
   Is there a mobile app?
-
+  <img src="images/icon-arrow.svg" alt="arrow" class="h-[100%]">
+   </div>
   <!-- Answer 3 -->
+   <div class="hidden">
   Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
   urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
   sollicitudin ex et ultricies bibendum.
-
+   </div>
   <!-- Question 4 -->
+   <div class="text-[15px] flex justify-between text-blue-950 pt-3 pb-3 border-b-[1px] border-blue-950/15 items-center">
   What about other Chromium browsers?
-
+  <img src="images/icon-arrow.svg" alt="arrow" class="h-[100%]">
+   </div>
   <!-- Answer 4 -->
+   <div class="hidden">
   Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
   vitae neque eget nisl gravida pellentesque non ut velit.
-
-  <button class="bg-blue-600 text-white font-semibold p-3 rounded-md">More Info</button>
-<div class="bg-blue-600">
+   </div>
+</div>
+  <button class="bg-blue-600 text-white font-semibold p-3 rounded-md mt-[3.5rem] w-fit m-auto">More Info</button>
+</div> <!-- FAQ end -->
+  <div class="bg-blue-600">
     <form class="p-6 flex flex-col gap-4">
-  35,000+ already joined
+  <p class="text-white uppercase m-auto tracking-[5px] text-xs">35,000+ already joined</p>
 
-  <p class="text-3xl font-semibold text-white">Stay up-to-date with what we’re doing</p>
+  <p class="text-3xl font-semibold text-white text-center">Stay up-to-date with what we’re doing</p>
 <input type="text" placeholder="Enter your email address" id="email" name="email" class="bg-white w-[100%] rounded-md p-3">
   <button class="text-white bg-red-400 w-[100%] p-2 rounded-md font-semibold">Contact Us</button>
   </form>
 </div>
   </main>
-  <footer class="bg-blue-950">
-    <img src="images/logo-bookmark.svg" alt="" class="stroke-white fill-white">
-  Features
-  Pricing
-  Contact
-
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <footer class="bg-blue-950 max-sm:p-[2rem] gap-[3rem] flex flex-col">
+    <div class="m-auto">
+    <img src="images/logo-bookmark2.svg" alt="" class="stroke-white fill-white">
+    </div>
+    <div class="flex max-sm:flex-col gap-3 w-[100%]">
+  <p class="text-white uppercase m-auto">Features</p>
+  <p class="text-white uppercase m-auto">Pricing</p>
+  <p class="text-white uppercase m-auto">Contact</p>
+    </div><div class="flex gap-8 m-auto">
+  <img src="images/icon-facebook.svg" alt="facebook-icon">
+  <img src="images/icon-twitter.svg" alt="twitter-icon">
+</div>
   </footer>
 </body>
 </html>
